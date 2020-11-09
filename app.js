@@ -47,7 +47,7 @@ addBtn.addEventListener('click', function () {
       edit_html.setAttribute('class', 'col-12 pr-0');
       edit_html.innerHTML = `<div class="input-group mb-3 d-flex justify-content-between align-items-center p-0">
         <div class="row p-0">
-        <input type="text" id="noteEdit-${closeId}" style="padding-left: 20px; color: #305251; font-size: 24px" placeholder="${inputBox.value}"></input>
+        <input type="text" id="noteEdit-${closeId}" class="edit-input" style="padding-left: 20px; color: #305251; font-size: 24px" value="${inputBox.value}"></input>
         </div>
         <div class="input-group-prepend">
         <button id="completeEdit-${closeId}" class="btn p-0" style="background-color: white;">
