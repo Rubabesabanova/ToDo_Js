@@ -75,7 +75,7 @@ addBtn.addEventListener('click', function () {
     });
     var completeBtn = document.querySelector(`#completeBtn-${closeId}`);
     completeBtn.addEventListener('click', function () {
-        var x = document.querySelector(`#noteText-${closeId}`);
+      var x = closeBtn.closest('#Note').children[0].children[0].children[1];
         if(x.classList.contains('complete')){
             x.classList.remove('complete');
         }
